@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤓 Nerd Point Arcade</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #111;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 35px 20px;
+      border-bottom: 6px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .nerd-wall {
+      font-size: 30px;
+      line-height: 1.5;
+      padding: 20px;
+      word-break: break-word;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .warning {
+      background: white;
+      border: 3px solid #111;
+      padding: 18px;
+      margin: 10px auto 30px;
+      max-width: 700px;
+      font-weight: bold;
+      box-shadow: 6px 6px 0 #111;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    button {
+      border: 3px solid #111;
+      background: white;
+      padding: 22px 12px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 5px 5px 0 #111;
+      transition: 0.12s;
+    }
+
+    button:hover {
+      transform: translate(3px, 3px);
+      box-shadow: 2px 2px 0 #111;
+      background: #eee;
+    }
+
+    button:active {
+      transform: translate(5px, 5px);
+      box-shadow: none;
+    }
+
+    .emoji {
+      display: block;
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    #result {
+      min-height: 100px;
+      margin: 35px auto;
+      max-width: 700px;
+      background: #111;
+      color: white;
+      padding: 30px 20px;
+      font-size: 25px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .big-nerd {
+      font-size: 80px;
+      margin: 20px 0;
+      animation: spin 1s ease;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(-20deg) scale(0.5);
+      }
+
+      100% {
+        transform: rotate(0) scale(1);
+      }
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px;
+      background: #111;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .games {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🤓 NERD POINT ARCADE 🤓</h1>
+    <p>The most useless arcade on the internet.</p>
+  </header>
+
+  <div class="nerd-wall">
+    🤓 🫵🏼 🤓 🫵🏼 🤓 🫵🏼 🤓 🫵🏼 🤓
+    🤓 🫵🏼 🤓 🫵🏼 🤓 🫵🏼 🤓 🫵🏼 🤓
+  </div>
+
+  <div class="container">
+
+    <div class="warning">
+      ⚠️ WARNING: Every game on this website is completely about 🤓.
+    </div>
+
+    <div class="games">
+
+      <button onclick="nerd('You have been diagnosed with an extreme case of 🤓.')">
+        <span class="emoji">🔬</span>
+        Nerd Scanner
+      </button>
+
+      <button onclick="nerd('Congratulations! Your Nerd Level is: 100% 🤓')">
+        <span class="emoji">📊</span>
+        Nerd Test
+      </button>
+
+      <button onclick="nerd('The answer is always: 🤓')">
+        <span class="emoji">🎱</span>
+        Ask the Nerd Ball
+      </button>
+
+      <button onclick="nerd('ERROR 404: Normal person not found. 🤓')">
+        <span class="emoji">💻</span>
+        Hacker Mode
+      </button>
+
+      <button onclick="nerd('You pressed a button just to see what happens. 🤓🫵🏼')">
+        <span class="emoji">🎮</span>
+        Mystery Game
+      </button>
+
+      <button onclick="nerd('Your opponent has been defeated by superior nerd knowledge. 🤓')">
+        <span class="emoji">⚔️</span>
+        Nerd Battle
+      </button>
+
+      <button onclick="nerd('Calculating... Calculating... 🤓🤓🤓')">
+        <span class="emoji">🧮</span>
+        Calculate
+      </button>
+
+      <button onclick="nerd('Achievement unlocked: YOU ARE LOOKING AT A NERD. 🤓')">
+        <span class="emoji">🏆</span>
+        Achievements
+      </button>
+
+      <button onclick="nerd('Scanning target... Target identified: 🤓🫵🏼')">
+        <span class="emoji">🎯</span>
+        Target Lock
+      </button>
+
+      <button onclick="nerd('The secret code is... 🤓')">
+        <span class="emoji">🔐</span>
+        Secret Room
+      </button>
+
+      <button onclick="nerd('Loading intelligence... 99%... 99%... 99%... 🤓')">
+        <span class="emoji">🧠</span>
+        Intelligence
+      </button>
+
+      <button onclick="nerd('You thought this button would lead somewhere else. 🤓🫵🏼')">
+        <span class="emoji">🚪</span>
+        Escape
+      </button>
+
+    </div>
+
+    <div id="result">
+      Press any button. 🤓
+    </div>
+
+    <div class="big-nerd">🤓🫵🏼</div>
+
+    <div class="nerd-wall">
+      🤓 🤓 🤓 🤓 🤓 🤓 🤓 🤓 🤓 🤓
+    </div>
+
+  </div>
+
+  <footer>
+    Made with absolutely unnecessary amounts of 🤓
+  </footer>
+
+  <script>
+    function nerd(message) {
+      const result = document.getElementById("result");
+
+      result.innerHTML = `
+        <div>
+          <div style="font-size:55px;">🤓</div>
+          ${message}
+        </div>
+      `;
+
+      result.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }
+  </script>
+
+</body>
+</html>
